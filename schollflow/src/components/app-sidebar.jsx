@@ -43,9 +43,11 @@ export function AppSidebar() {
               <div
                 className="flex aspect-square size-8 items-center justify-center rounded-lg  text-sidebar-primary-foreground">
                 <Image
+                alt="Logo"
                 src={'/onlyLogo.png'}
                 width={150}
                 height={150}/>
+                
               </div>
               <div className="flex flex-col gap-0.5 leading-none mt-10">
                 <span className="font-medium">SchoolFlow</span>
@@ -91,6 +93,7 @@ export function AppSidebar() {
       className={`w-10 h-10 rounded-full shadow-md transition bg-[#4f00aa] hover:bg-[#3d0085] fixed top-4 left-4 z-50`}>
       <img
         src={'/onlyLogo.png'}
+        alt="logo"
         width={150}
         height={150} />
     </SidebarTrigger>

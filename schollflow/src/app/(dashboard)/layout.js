@@ -1,6 +1,6 @@
 import { Oswald} from "next/font/google";
 import "@/app/globals.css";
-
+import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 
 const oswald = Oswald({
@@ -24,8 +24,11 @@ export default function RootLayout({ children }) {
       >
       
       <body className="min-h-full flex flex-col">
-        
+        <SidebarProvider>  
+                <AppSidebar alt="Initial Dashboard" />
         {children}
+        </SidebarProvider>
+
         </body>
     </html>
   );

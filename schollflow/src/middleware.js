@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 // Lista de rotas que precisam de login
-const rotasPrivadas = ["/dashboard", "/aulas","/boletim","/calendario","/comunidade","/cursos","/frequencia"];
+const rotasPrivadas = ["/dashboard", "/courses", "/calendar", "/frequence", "/boletim"];
 
 // Lista de rotas que NÃO devem ser acessadas se já estiver logado
 const rotasDeAuth = ["/login", "/signup"];
@@ -35,5 +35,5 @@ export async function middleware(request) {
 
 // Define em quais rotas o middleware roda
 export const config = {
-  matcher: ["/first-access/:path*","/dashboard/:path*", "/login", "/signup"],
+  matcher: ["/first-access/:path*","/dashboard/:path*", "/login", "/signup", "/courses", "/calendar", "/frequence", "/boletim"]
 };

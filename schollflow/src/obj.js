@@ -3,7 +3,7 @@ const data = {
   navMain: [
     {
       title: "Boletim",
-      url: "#"
+      url: "/boletim"
       
     },
     {
@@ -17,7 +17,7 @@ const data = {
     },
     {
       title: "Cursos",
-      url: "#"
+      url: "/courses"
       
     },
     {

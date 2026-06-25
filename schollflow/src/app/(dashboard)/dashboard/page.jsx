@@ -52,7 +52,7 @@ export default function Page() {
   }, [])
   return (
     <SidebarProvider defaultOpen='false'>
-      <AppSidebar alt="Initial Dashboard" />
+      
       <SidebarInset>
         <header className="flex w-full h-16  shrink-0 items-center gap-2 border-b">
           <div className=" flex items-center gap-2 px-3 ml-10">

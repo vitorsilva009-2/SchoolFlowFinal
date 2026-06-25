@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Plus } from "lucide-react";
-import CardCourses from "@/components/card-courses";
+import CardPlanAdmin from "@/components/card-courses";
 import CourseForm from "@/components/course-form";
 
 const API = "http://localhost:5500/api/courses";
@@ -95,13 +95,13 @@ export default function CoursesAdmin() {
   return (
     <div className="flex  w-full flex-col gap-6 items-center">
       <div className="flex  items-center mt-10 ">
-        <h1 className="text-7xl font-bold">Cursos</h1>
+        <h1 className="text-7xl font-bold">Boletim</h1>
        
       </div>
       <div>
          <Button onClick={openCreate}>
           <Plus className="size-4 mr-2" />
-          Adicionar Curso
+          Adicionar Nota
         </Button>
       </div>
 
@@ -118,7 +118,7 @@ export default function CoursesAdmin() {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (
-            <CardCourses
+            <CardPlanAdmin
               key={course.id}
               course={course}
               confirmDelete={confirmDelete}

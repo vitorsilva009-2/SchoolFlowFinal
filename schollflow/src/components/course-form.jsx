@@ -10,7 +10,7 @@ import {
   SheetTitle,
 } from "./ui/sheet";
 
-export default function PlanForm({
+export default function CourseForm({
   editing,
   sheetOpen,
   setSheetOpen,

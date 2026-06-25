@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "./ui/card";
 
-export default function CardPlanAdmin({
+export default function CardCourses({
   course,
   confirmDelete,
   onEdit,
